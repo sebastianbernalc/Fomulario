@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">Fomulario</string>
+    <string name="register_form">Formulario de registro</string>
+    <string name="name">Nombre</string>
+    <string name="Name">Nombre</string>
+    <string name="last_name">Apellidos</string>
+    <string name="email">Correo Electronico</string>
+    <string name="Register">Registrar</string>
+    <string name="password">Contraseña</string>
+    <string name="genero">Género</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
+    <string name="hobbies">Hobbies</string>
+    <string name="viajar">Viajar</string>
+    <string name="leer">Leer</string>
+    <string name="bailar">Bailar</string>
+    <string name="pintar">Pintar</string>
+    <string name="fecha_nacimiento">Fecha de nacimiento</string>
+    <string name="lugar_nacimiento">Lugar de nacimiento</string>
+    <string-array name="lista_ciudades">
+        <item>Medellín</item>
+        <item>Calí</item>
+        <item>Barranquilla</item>
+        <item>Bogotá</item>
+        <item>Cartagena</item>
+    </string-array>
 </resources>
