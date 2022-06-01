@@ -17,6 +17,10 @@
     <string name="pintar">Pintar</string>
     <string name="fecha_nacimiento">Fecha de nacimiento</string>
     <string name="lugar_nacimiento">Lugar de nacimiento</string>
+    <string name="masculino_botton_input">Masculino</string>
+    <string name="femenino_botton_input">femenino</string>
+    <string name="date">Fecha de nacimiento</string>
+    <string name="fecha_text">Fecha de nacimiento</string>
     <string-array name="lista_ciudades">
         <item>Medellín</item>
         <item>Calí</item>
