@@ -21,6 +21,17 @@
     <string name="femenino_botton_input">femenino</string>
     <string name="date">Fecha de nacimiento</string>
     <string name="fecha_text">Fecha de nacimiento</string>
+    <string name="info">Nombre: %s\nCorreo Electronico: %s \nContraseña: %s \nGénero: %s \nHobbies: %s \nLugar de nacimiento: %s \nFecha de nacimiento: %s </string>
+    <string name="fecha_estructura">dd/MM/yyyy</string>
+    <string name="vacio">No puede estar vacio</string>
+    <string name="ingresar_campos">Debe ingresar todos los campos</string>
+    <string name="ingresar_email">Debe ingresar email</string>
+    <string name="digite_nombre">Digite nombre</string>
+    <string name="digite_fecha">Digite fecha</string>
+    <string name="contraseña_no_coincide">Contraseña no coincide</string>
+    <string name="correo_valido">Ingrese correo valido</string>
+    <string name="datos_registrados">Datos registrados</string>
+
     <string-array name="lista_ciudades">
         <item>Medellín</item>
         <item>Calí</item>

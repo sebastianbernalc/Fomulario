@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Formato</string>
+    <string name="register_form">Formulário de registro</string>
+    <string name="name">Nome</string>
+    <string name="Name">Nome</string>
+    <string name="last_name">Sobrenome</string>
+    <string name="email">Correio eletrônico</string>
+    <string name="Register">Cadastro</string>
+    <string name="password">Senha</string>
+    <string name="genero">Gênero sexual</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">feminino</string>
+    <string name="hobbies">Hobbies</string>
+    <string name="viajar">viajar</string>
+    <string name="leer">ler</string>
+    <string name="bailar">dança</string>
+    <string name="pintar">pintar</string>
+    <string name="fecha_nacimiento">data de nascimento</string>
+    <string name="lugar_nacimiento">naturalidade</string>
+    <string name="masculino_botton_input">Masculino</string>
+    <string name="femenino_botton_input">feminino</string>
+    <string name="date">data de nascimento</string>
+    <string name="fecha_text">naturalidade</string>
+    <string name="info">Name: %s\nEmail: %s \Senha: %s \Gênero sexual: %s \nHobbies: %s \nnaturalidade: %s \ndata de nascimento: %s </string>
+    <string name="fecha_estructura">dd/MM/yyyy</string>
+    <string name="vacio">Não pode estar vazio</string>
+    <string name="ingresar_campos">Você deve inserir todos os campos</string>
+    <string name="ingresar_email">Você deve inserir Correio eletrônico</string>
+    <string name="digite_nombre">Digite o nome</string>
+    <string name="digite_fecha">Digite data</string>
+    <string name="contraseña_no_coincide">Senha não corresponde</string>
+    <string name="correo_valido">Digite um e-mail válido</string>
+    <string name="datos_registrados">Dados registrados</string>
+
+    <string-array name="lista_ciudades">
+        <item>Medellín</item>
+        <item>Calí</item>
+        <item>Barranquilla</item>
+        <item>Bogotá</item>
+        <item>Cartagena</item>
+    </string-array>
+
+</resources>

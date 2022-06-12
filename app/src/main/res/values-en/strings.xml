@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Form</string>
+    <string name="register_form">Registration Form</string>
+    <string name="name">Name</string>
+    <string name="Name">Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="Register">Register</string>
+    <string name="password">Password</string>
+    <string name="genero">Gender</string>
+    <string name="masculino">Male</string>
+    <string name="femenino">Female</string>
+    <string name="hobbies">Hobbies</string>
+    <string name="viajar">Travel</string>
+    <string name="leer">Read</string>
+    <string name="bailar">Dance</string>
+    <string name="pintar">Paint</string>
+    <string name="fecha_nacimiento">Date of birth</string>
+    <string name="lugar_nacimiento">Place of birth</string>
+    <string name="masculino_botton_input">Male</string>
+    <string name="femenino_botton_input">Female</string>
+    <string name="date">Date of birth</string>
+    <string name="fecha_text">Place of birth</string>
+    <string name="info">Name: %s\nEmail: %s \nPassword: %s \nGender: %s \nHobbies: %s \nPlace of birth: %s \nDate of birth: %s </string>
+    <string name="fecha_estructura">dd/MM/yyyy</string>
+    <string name="vacio">It can be empty</string>
+    <string name="ingresar_campos">You must enter all fields</string>
+    <string name="ingresar_email">You must enter email</string>
+    <string name="digite_nombre">Type name</string>
+    <string name="digite_fecha">Type date</string>
+    <string name="contraseña_no_coincide">password does not match</string>
+    <string name="correo_valido">Type valid email</string>
+    <string name="datos_registrados">Registered data</string>
+
+    <string-array name="lista_ciudades">
+        <item>Medellín</item>
+        <item>Calí</item>
+        <item>Barranquilla</item>
+        <item>Bogotá</item>
+        <item>Cartagena</item>
+    </string-array>
+    
+
+</resources>

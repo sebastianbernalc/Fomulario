@@ -16,7 +16,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:text="@string/register_form"
-        android:textColor="@color/white"
+        android:textColor="@color/secondary_text"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,6 +26,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/email_text_input_layout"
+        app:startIconDrawable="@drawable/ic_baseline_email_24"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -34,6 +35,8 @@
         android:layout_marginEnd="16dp"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
+        app:endIconMode="clear_text"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nombre_edit_text">
@@ -59,14 +62,16 @@
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ciudad_nacimiento_spinner" />
+        app:layout_constraintTop_toBottomOf="@+id/ciudad_nacimiento_spinner"
+        app:rippleColor="#303F9F"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/info_text_view"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="6dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -81,6 +86,8 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="16dp"
         android:hint="@string/Name"
+        app:startIconDrawable="@drawable/ic_baseline_person_outline_24"
+        app:endIconMode="clear_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/Titulo_Text_View">
@@ -106,7 +113,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/email_text_input_layout"
-        app:passwordToggleEnabled="true">
+        app:endIconMode="password_toggle"
+        app:errorEnabled="true"
+        app:errorIconDrawable="@null">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/pass_edit_text"
@@ -123,10 +132,12 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="3dp"
         android:layout_marginEnd="16dp"
         android:hint="@string/password"
         app:endIconMode="password_toggle"
+        app:errorEnabled="true"
+        app:errorIconDrawable="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password_text_input">
@@ -177,7 +188,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="300dp"
         android:text="@string/hobbies"
-        android:textColor="#673AB7"
+        android:textColor="@color/secondary_text"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -242,7 +253,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="341dp"
         android:text="@string/lugar_nacimiento"
-        android:textColor="#673AB7"
+        android:textColor="@color/secondary_text"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -274,7 +285,7 @@
         android:layout_marginTop="1dp"
         android:layout_marginEnd="342dp"
         android:text="@string/genero"
-        android:textColor="#673AB7"
+        android:textColor="@color/secondary_text"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -306,10 +317,11 @@
         android:clickable="true"
         android:focusable="true"
         android:focusableInTouchMode="false"
+        android:hint="@string/fecha_estructura"
         android:inputType="date"
         android:isScrollContainer="false"
         android:textAlignment="textEnd"
-        android:textColorHint="#000000"
+        android:textColorHint="@color/secondary_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.467"
         app:layout_constraintStart_toStartOf="parent"
@@ -324,7 +336,7 @@
         android:layout_marginTop="3dp"
         android:layout_marginEnd="255dp"
         android:text="@string/fecha_nacimiento"
-        android:textColor="#673AB7"
+        android:textColor="@color/secondary_text"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
