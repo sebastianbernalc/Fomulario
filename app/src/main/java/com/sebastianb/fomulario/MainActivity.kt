@@ -19,6 +19,7 @@ class MainActivity : Activity() {     // los dos puntos son herencia
     private lateinit var mainBinding: ActivityMainBinding  //Declaramos pero no la inicializamos
     private var fechanacimiento: String = ""
     private var cal = Calendar.getInstance()
+    private var conf=0
 
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -56,9 +57,9 @@ class MainActivity : Activity() {     // los dos puntos son herencia
 
         var hobbies = ""
         mainBinding.registerButton.setOnClickListener {validar()
-            if (mainBinding.emailEditText.text?.isEmpty() == true || mainBinding.nameTextFile.text?.isEmpty() == true || mainBinding.passEditText.text?.isEmpty() == true || mainBinding.pass2EditText.text?.isEmpty() == true || mainBinding.dateEditText.text?.isEmpty() == true) {
+            if (mainBinding.emailEditText.text?.isEmpty() == true || mainBinding.nameTextFile.text?.isEmpty() == true || mainBinding.passEditText.text?.isEmpty() == true || mainBinding.pass2EditText.text?.isEmpty() == true || mainBinding.dateEditText.text?.isEmpty() == true||conf==1) {
                 Toast.makeText(this, getString(R.string.ingresar_campos), Toast.LENGTH_SHORT).show()
-
+                mainBinding.infoTextView.text=null
                 if (mainBinding.emailEditText.text?.isEmpty() == true)
                     mainBinding.emailEditText.error = getString(R.string.ingresar_email)
 
@@ -88,6 +89,7 @@ class MainActivity : Activity() {     // los dos puntos son herencia
                 if (pass != pass2) {
                     Toast.makeText(this, getString(R.string.contraseña_no_coincide), Toast.LENGTH_SHORT).show()
                     mainBinding.pass2EditText.error = getString(R.string.contraseña_no_coincide)
+                    mainBinding.infoTextView.text=null
 
                 } else {
                     mainBinding.infoTextView.text = getString(
@@ -112,10 +114,12 @@ class MainActivity : Activity() {     // los dos puntos son herencia
         val emailv = mainBinding.emailTextInputLayout.editText?.text.toString()
         return if (emailv.isEmpty()) {
             mainBinding.emailEditText.error = getString(R.string.vacio)
+
             false
 
         } else if (!PatternsCompat.EMAIL_ADDRESS.matcher(emailv).matches()) {
             mainBinding.emailEditText.error = getString(R.string.correo_valido)
+
             false
         } else {
             mainBinding.emailEditText.error = null
@@ -156,8 +160,10 @@ class MainActivity : Activity() {     // los dos puntos son herencia
     private fun validar(){
         val resultado= arrayOf(validar_email(),validar_pass())
         if(false in resultado){
+            conf=1
             return
         }
+        conf=0
         Toast.makeText(this,getString(R.string.datos_registrados),Toast.LENGTH_SHORT).show()
 
     }
