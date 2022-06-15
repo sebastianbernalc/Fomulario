@@ -169,3 +169,5 @@ class MainActivity : Activity() {     // los dos puntos son herencia
     }
 }
 //modificacion
+//v2.0
+//v2.0
