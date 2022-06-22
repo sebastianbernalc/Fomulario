@@ -1,10 +1,11 @@
-package com.sebastianb.fomulario
+package com.sebastianb.fomulario.ui.splash
 
 import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.sebastianb.fomulario.databinding.ActivitySplashBinding
+import com.sebastianb.fomulario.ui.main.MainActivity
 import java.util.*
 import kotlin.concurrent.timerTask
 
@@ -14,8 +15,8 @@ private lateinit var splashBinding:ActivitySplashBinding
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        splashBinding=ActivitySplashBinding.inflate(layoutInflater)
-        val view= splashBinding.root
+        splashBinding = ActivitySplashBinding.inflate(layoutInflater)
+        val view = splashBinding.root
         setContentView(view)
         val timer= Timer()
 
